@@ -26,7 +26,7 @@ public class ThermTest
 
 		// d
 		// Print temperature
-		System.out.println("Temp. of Thermometer A is " + tempB);
+		System.out.println("Temp. of Thermometer B is " + tempB);
 		
 	} // end main
 } // end class ThermTest
