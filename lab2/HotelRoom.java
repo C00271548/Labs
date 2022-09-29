@@ -15,16 +15,19 @@ public class HotelRoom
 
     public HotelRoom()
     {
-        
+        roomNumber = 0;
+        roomType = "";
+        occupied = 0;
+        rate = 0.0;
     }
 
     // 3
-    public HotelRoom(int roomNum, String type, int taken, double rateNum)
+    public HotelRoom(int roomNumber, String roomType, int occupied, double rate)
     {
-        setRoomNumber(roomNum);
-        setRoomType(type);
-        setOccupied(taken);
-        setRate(rateNum);
+        this.roomNumber = roomNumber;
+        this.roomType = roomType;
+        this.occupied = occupied;
+        this.rate = rate;
     }
 
     // 4
@@ -34,18 +37,18 @@ public class HotelRoom
     }
 
     // 1
-    public void setRoomNumber(int roomNum)
+    public void setRoomNumber(int roomNumber)
     {
-        roomNumber = roomNum;
+        this.roomNumber = roomNumber;
     }
 
     public int getRoomNumber()
     {
         return roomNumber;
     }
-    public void setRoomType(String type)
+    public void setRoomType(String roomType)
     {
-        roomType = type;
+        this.roomType = roomType;
     }
 
     public String getRoomType()
@@ -54,9 +57,9 @@ public class HotelRoom
     }
 
     // 2
-    public void setOccupied(int taken)
+    public void setOccupied(int occupied)
     {
-        occupied = taken;
+        this.occupied = occupied;
     }
 
     public int getOccupied()
@@ -64,9 +67,9 @@ public class HotelRoom
         return occupied;
     }
 
-    public void setRate(double rateNum)
+    public void setRate(double rate)
     {
-        rate = rateNum;
+       this.rate = rate;
     }
 
     public double getRate()
