@@ -1,10 +1,10 @@
 import java.util.Calendar;
 
+// 1
 public class Clock
 {
 	public static void main(String[] args)
 	{
-		// 1
 		// makes new Calendar
 		Calendar cal = Calendar.getInstance();
 		// sets the new Time object
@@ -13,11 +13,15 @@ public class Clock
 		System.out.println(t.toString());
 		
 		long startMin;
+		// runs 60 times as there is 60 seconds in a minute
 		for (int index = 0; index < 60; index++)
 		{
 			startMin = System.currentTimeMillis();
+			// runs until a second has passed
 			while (System.currentTimeMillis() - startMin < 1000)
 			{
+				// sleeps for 50 milliseconds
+				// so that the cpu does not run unnesesarily
 				try
 				{
 					Thread.sleep(50);
@@ -29,6 +33,7 @@ public class Clock
 			}
 			t.tick();
 		}
+		// prints out time
 		System.out.println(t.toString());
 	}
 }
