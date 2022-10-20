@@ -24,7 +24,7 @@ public class Clock
 				// so that the cpu does not run unnesesarily
 				try
 				{
-					Thread.sleep(50);
+					Thread.sleep(1);
 				}
 				catch (InterruptedException e)
 				{
