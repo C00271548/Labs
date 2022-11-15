@@ -12,6 +12,14 @@ public class Teacher extends Person
     
     public boolean addCourse(String course)
     {
+        for (int i = 0; i < numCourses; i++)
+        {
+            if (courses[i].equals(course))
+            {
+                return false;
+            }
+        }
+
         String[] temp = courses;
         numCourses += 1;
 
