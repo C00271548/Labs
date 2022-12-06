@@ -1,4 +1,4 @@
-interface LoanItem
+public interface LoanItem
 {
     public double calculatePrice();
 }
